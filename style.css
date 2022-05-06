@@ -8,4 +8,31 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: center;    color: white;
+    
+}
+
+h1{
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: 50px;
+}
+
+.timer-container {
+    display: flex;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    margin: 0 2rem;
+    line-height: 5;
+}
+
+.pequenos {
+    text-align: center;
+}
+
+.pequenos span {
+    font-size: 1.3rem;
 }

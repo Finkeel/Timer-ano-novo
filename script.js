@@ -1,4 +1,10 @@
-const novoAno = "1 de Janeiro de 2023"
+const diasEL = document.getElementById("dias");
+const horasEL = document.getElementById("horas");
+const minutosEL = document.getElementById("minutos");
+const segundosEL = document.getElementById("segundos");
+
+
+const novoAno = "1 Jan 2023";
 
 function timer(){
     const novoAnoData = new Date(novoAno);
@@ -11,9 +17,12 @@ function timer(){
     const minutos = Math.floor(segundosTotais / 60) % 60;
     const segundos = Math.floor(segundosTotais) % 60;
 
-
-
-
-
-    console.log()
+    diasEL.innerHTML = dias;
+    horasEL.innerHTML = horas;
+    minutosEL.innerHTML = minutos;
+    segundosEL.innerHTML = segundos;
 }
+
+timer();
+
+setInterval(timer, 1000);

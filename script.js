@@ -17,10 +17,14 @@ function timer(){
     const minutos = Math.floor(segundosTotais / 60) % 60;
     const segundos = Math.floor(segundosTotais) % 60;
 
-    diasEL.innerHTML = dias;
-    horasEL.innerHTML = horas;
-    minutosEL.innerHTML = minutos;
-    segundosEL.innerHTML = segundos;
+    diasEL.innerHTML = formatar(dias);
+    horasEL.innerHTML = formatar(horas);
+    minutosEL.innerHTML = formatar(minutos);
+    segundosEL.innerHTML = formatar(segundos);
+}
+
+function formatar(tempo){
+    return tempo < 10 ? `0${tempo}` : tempo;
 }
 
 timer();

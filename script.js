@@ -4,7 +4,7 @@ const minutosEL = document.getElementById("minutos");
 const segundosEL = document.getElementById("segundos");
 
 
-const novoAno = "1 Jan 2023";
+const novoAno = "1 Jan 2024";
 
 function timer(){
     const novoAnoData = new Date(novoAno);
